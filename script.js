@@ -125,13 +125,13 @@ const movies = {
     southHindi: [
         {
             id: 7,
-            title: 'Pushpa: The Rise',
+            title: 'Sookshma Darshini',
             poster: 'https://via.placeholder.com/300x450?text=Pushpa',
             rating: 7.6,
             year: 2021,
             duration: '2h 59m',
             trailer: 'https://samplelib.com/lib/preview/mp4/sample-5s.mp4',
-            video: 'https://samplelib.com/lib/preview/mp4/sample-10s.mp4',
+            video: 'Sookshmadarshini.mp4',
             story: 'A laborer rises through the ranks of a smuggling syndicate, making enemies along the way as he becomes a powerful figure in the red sandalwood trade.',
             cast: [
                 { name: 'Allu Arjun', photo: 'https://via.placeholder.com/100x100?text=Allu' },
