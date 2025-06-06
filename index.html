@@ -3,305 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MovieFlix - Premium Free Streaming</title>
+    <title>Movieflix - Free Streaming Platform</title>
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Loader -->
-    <div class="loader">
-        <div class="loader-content">
-            <div class="loader-logo animate__animated animate__fadeIn">
-                <span class="logo-letter">M</span>
-                <span class="logo-letter">O</span>
-                <span class="logo-letter">V</span>
-                <span class="logo-letter">I</span>
-                <span class="logo-letter">E</span>
-                <span class="logo-flix">FLIX</span>
-            </div>
-            <div class="loader-bar">
-                <div class="progress"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Theme Toggle -->
-    <div class="theme-toggle">
-        <i class="fas fa-moon"></i>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="logo">MOVIE<span>FLIX</span></a>
-            <div class="nav-links">
-                <a href="#bollywood" class="nav-link">
-                    <span class="link-text">Bollywood</span>
-                    <span class="link-icon"><i class="fas fa-film"></i></span>
-                </a>
-                <a href="#south-hindi" class="nav-link">
-                    <span class="link-text">South Hindi</span>
-                    <span class="link-icon"><i class="fas fa-closed-captioning"></i></span>
-                </a>
-                <a href="#hollywood" class="nav-link">
-                    <span class="link-text">Hollywood</span>
-                    <span class="link-icon"><i class="fas fa-globe-americas"></i></span>
-                </a>
-                <a href="#south-original" class="nav-link">
-                    <span class="link-text">South Original</span>
-                    <span class="link-icon"><i class="fas fa-language"></i></span>
-                </a>
-            </div>
-            <div class="hamburger">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="animate__animated animate__fadeInDown">Unlimited Movies & Shows</h1>
-            <p class="animate__animated animate__fadeInUp">Stream anytime, anywhere. Absolutely Free.</p>
-            <div class="hero-scroll animate__animated animate__fadeInUp animate__delay-1s">
-                <span>Explore</span>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- Marquee Section -->
-    <div class="marquee-container">
-        <div class="marquee-track">
-            <div class="marquee-item">
-                <span class="highlight">TRENDING NOW</span>
-                <span>Pathaan</span>
-                <span>Avengers</span>
-                <span>KGF 2</span>
-            </div>
-            <div class="marquee-item">
-                <span class="highlight">NEW RELEASES</span>
-                <span>Salaar</span>
-                <span>Jawan</span>
-                <span>Oppenheimer</span>
-            </div>
-            <div class="marquee-item">
-                <span class="highlight">POPULAR</span>
-                <span>Pushpa</span>
-                <span>Vikram</span>
-                <span>Interstellar</span>
-            </div>
+    <div class="loader-container">
+        <div class="loader">
+            <div class="loader-logo">Movieflix</div>
+            <div class="loader-bar"></div>
         </div>
     </div>
 
     <!-- Main Content -->
-    <main class="main-content">
-        <!-- Bollywood Section -->
-        <section id="bollywood" class="movie-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-text">Bollywood Movies</span>
-                    <span class="title-border"></span>
-                </h2>
-                <div class="section-controls">
-                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
-                </div>
+    <div class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="navbar-brand">Movieflix</div>
+            <ul class="navbar-links">
+                <li><a href="#bollywood">Bollywood</a></li>
+                <li><a href="#south-dubbed">South Hindi Dubbed</a></li>
+                <li><a href="#south-original">South Original</a></li>
+                <li><a href="#hollywood">Hollywood</a></li>
+            </ul>
+            <div class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
             </div>
-            <div class="movie-container">
-                <div class="movie-slider">
-                    <!-- Movies will be added dynamically by JavaScript -->
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1>Unlimited Movies & Series</h1>
+                <p>Watch anywhere. Stream for free.</p>
+            </div>
+            <div class="marquee">
+                <div class="marquee-content">
+                    <span>Now Streaming: Pathaan • KGF Chapter 2 • Avatar 2 • RRR • Avengers • Jawan • Animal •</span>
                 </div>
             </div>
         </section>
 
-        <!-- South Hindi Dubbed Section -->
-        <section id="south-hindi" class="movie-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-text">South Hindi Dubbed</span>
-                    <span class="title-border"></span>
-                </h2>
-                <div class="section-controls">
-                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <div class="movie-container">
-                <div class="movie-slider">
-                    <!-- Movies will be added dynamically by JavaScript -->
-                </div>
+        <!-- Movie Categories -->
+        <section class="movie-category" id="bollywood">
+            <h2 class="category-title">Bollywood</h2>
+            <div class="movie-slider">
+                <!-- Movie items will be populated by JavaScript -->
             </div>
         </section>
 
-        <!-- Hollywood Section -->
-        <section id="hollywood" class="movie-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-text">Hollywood Movies</span>
-                    <span class="title-border"></span>
-                </h2>
-                <div class="section-controls">
-                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <div class="movie-container">
-                <div class="movie-slider">
-                    <!-- Movies will be added dynamically by JavaScript -->
-                </div>
+        <section class="movie-category" id="south-dubbed">
+            <h2 class="category-title">South Hindi Dubbed</h2>
+            <div class="movie-slider">
+                <!-- Movie items will be populated by JavaScript -->
             </div>
         </section>
 
-        <!-- South Original Section -->
-        <section id="south-original" class="movie-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-text">South Original Language</span>
-                    <span class="title-border"></span>
-                </h2>
-                <div class="section-controls">
-                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <div class="movie-container">
-                <div class="movie-slider">
-                    <!-- Movies will be added dynamically by JavaScript -->
-                </div>
+        <section class="movie-category" id="hollywood">
+            <h2 class="category-title">Hollywood</h2>
+            <div class="movie-slider">
+                <!-- Movie items will be populated by JavaScript -->
             </div>
         </section>
-    </main>
+
+        <section class="movie-category" id="south-original">
+            <h2 class="category-title">South Original</h2>
+            <div class="movie-slider">
+                <!-- Movie items will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">Movieflix</div>
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Movieflix. All rights reserved.
+            </div>
+        </footer>
+    </div>
 
     <!-- Movie Modal -->
     <div class="movie-modal">
-        <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <button class="close-modal">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-content">
-                <div class="video-container">
-                    <video class="trailer-video" controls>
-                        <source src="" type="video/mp4">
-                    </video>
-                </div>
-                <div class="movie-details">
-                    <div class="movie-header">
-                        <h2 class="movie-title">Movie Title</h2>
-                        <div class="movie-meta">
-                            <span class="rating"><i class="fas fa-star"></i> <span class="rating-value">0.0</span></span>
-                            <span class="year"><i class="fas fa-calendar-alt"></i> <span class="year-value">2023</span></span>
-                            <span class="duration"><i class="fas fa-clock"></i> <span class="duration-value">2h 30m</span></span>
-                        </div>
-                    </div>
-                    <div class="movie-info">
-                        <div class="movie-story">
-                            <h3>Synopsis</h3>
-                            <p class="story-text">Loading story...</p>
-                        </div>
-                        <div class="movie-cast">
-                            <h3>Cast</h3>
-                            <div class="cast-container">
-                                <!-- Cast will be added dynamically -->
-                            </div>
-                        </div>
-                    </div>
-                    <button class="watch-movie-btn">
-                        <span>WATCH NOW</span>
-                        <div class="fire-effect">
-                            <div class="fire"></div>
-                            <div class="fire"></div>
-                            <div class="fire"></div>
-                        </div>
-                    </button>
-                </div>
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-trailer">
+                <video controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+            <div class="movie-info">
+                <h2 class="movie-title"></h2>
+                <div class="movie-cast"></div>
+                <p class="movie-story"></p>
+                <button class="watch-full-movie">Watch Full Movie <i class="fas fa-fire"></i></button>
             </div>
         </div>
     </div>
 
-    <!-- Fullscreen Player -->
-    <div class="fullscreen-player">
-        <div class="player-header">
-            <button class="back-btn">
-                <i class="fas fa-arrow-left"></i>
-            </button>
-            <div class="player-title">Movie Title</div>
-            <div class="player-controls">
-                <button class="volume-btn">
-                    <i class="fas fa-volume-up"></i>
-                    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
-                </button>
-                <button class="fullscreen-btn">
-                    <i class="fas fa-expand"></i>
-                </button>
-            </div>
-        </div>
-        <video class="movie-video" controls>
+    <!-- Fullscreen Video Player -->
+    <div class="video-player">
+        <video controls>
             <source src="" type="video/mp4">
         </video>
+        <button class="close-player">&times;</button>
+        <div class="player-controls">
+            <button class="play-pause"><i class="fas fa-play"></i></button>
+            <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+            <button class="fullscreen-toggle"><i class="fas fa-expand"></i></button>
+        </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <a href="#" class="logo">MOVIE<span>FLIX</span></a>
-                    <p class="footer-description">The ultimate destination for premium free streaming. Watch the latest movies and shows in high quality.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h3 class="footer-title">Navigation</h3>
-                        <ul>
-                            <li><a href="#bollywood">Bollywood</a></li>
-                            <li><a href="#south-hindi">South Hindi</a></li>
-                            <li><a href="#hollywood">Hollywood</a></li>
-                            <li><a href="#south-original">South Original</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3 class="footer-title">Legal</h3>
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">DMCA</a></li>
-                            <li><a href="#">Copyright</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3 class="footer-title">Support</h3>
-                        <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Report Issue</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2023 MovieFlix. All Rights Reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Terms</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Cookies</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="loader.js"></script>
+    <script src="main.js"></script>
+    <script src="dark-mode.js"></script>
+    <script src="video-player.js"></script>
 </body>
 </html>
