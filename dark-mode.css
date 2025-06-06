@@ -1,0 +1,56 @@
+/* dark-mode.css */
+/* Default is dark mode, so light mode styles are defined here */
+body.light-mode {
+                 background-color: #f5f5f5;
+                 color: #333;
+             }
+             
+             .light-mode .navbar {
+                 background-color: rgba(245, 245, 245, 0.9);
+                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+             }
+             
+             .light-mode .navbar-links a {
+                 color: #333;
+             }
+             
+             .light-mode .hero-content h1,
+             .light-mode .hero-content p,
+             .light-mode .marquee-content span {
+                 color: #333;
+                 text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+             }
+             
+             .light-mode .movie-overlay {
+                 background: linear-gradient(to top, rgba(245, 245, 245, 0.9), transparent);
+             }
+             
+             .light-mode .movie-name,
+             .light-mode .movie-rating span {
+                 color: #333;
+             }
+             
+             .light-mode .footer {
+                 background-color: #e0e0e0;
+             }
+             
+             .light-mode .footer-links a,
+             .light-mode .social-icons a {
+                 color: #333;
+             }
+             
+             .light-mode .modal-content {
+                 background-color: #f5f5f5;
+             }
+             
+             .light-mode .movie-story {
+                 color: #555;
+             }
+             
+             .light-mode .dark-mode-toggle .fa-moon {
+                 display: none;
+             }
+             
+             .light-mode .dark-mode-toggle .fa-sun {
+                 display: block;
+             }
